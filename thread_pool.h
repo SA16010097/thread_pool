@@ -18,6 +18,7 @@ using namespace std;
 
 class ThreadPool{
 public:
+    ThreadPool() = delete;
     static ThreadPool* GetInstance()
     {
         static ThreadPool* ptr = new ThreadPool(10);
